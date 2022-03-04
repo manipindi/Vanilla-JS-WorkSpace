@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="../CSS/fontawesome_5.8.1.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/mdb.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+    <style>
+        #card-1{
+            box-shadow: 0 5px 20px black;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">BS Grid Cards</a>
+    </nav>
+
+
+    <!-- ********************* Start Here *********************-->
+
+        <!--image upload-->
+
+    <div class="container mt-3">
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3>Image Upload</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="upload-form" enctype="multipart/form-data">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                              </div>
+                              <div>
+                                  <input type="submit" value="Upload" class="btn mt-3 btn-primary btn-sm">
+                                  <button class="btn btn-danger btn-sm mt-3" id="remove-btn">Remove All</button>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+        <div class="row" id="card-row">
+            
+        </div>
+    </div>
+    
+
+    <!-- ********************* End Here *********************-->
+
+
+<!--Bootstrap js file-->
+<script src="app.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/popper.js"></script> 
+<script src="../js/bootstrap.js"></script>
+<script src="../js/mdb.js"></script>     
+</body>
+</html>
